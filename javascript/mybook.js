@@ -25,8 +25,8 @@ const quotes = [{
 },]
 
 let btn = document.querySelector("#Qbtn")
-let quote = document.querySelector(".quote")
-let writer = document.querySelector(".writer")
+let quote = document.querySelector(".sp-quote")
+let writer = document.querySelector(".sp-writer")
 
 btn.addEventListener("click", function() {
     let random = Math.floor(Math.random()* quotes.length);

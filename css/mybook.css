@@ -18,6 +18,7 @@ img {
     width: 100%;
 }
 
+ /*navbar*/ 
 .navbar {
     box-shadow: 0 12px 20px rgba(0,0,0,0.1);
     background-color: #94593ce5;
@@ -46,14 +47,15 @@ img {
     color: #dce2e8;
   
 }
+
+ /*section*/ 
 section {
     padding-top: 50px;
-
     z-index: 2;
     position: relative;
 }
 
-.display-4 {
+.sp-display-4 {
     font-family: 'Raleway', sans-serif;
     line-height: 100px;
 }
@@ -89,15 +91,15 @@ section {
 
 
 
-
-.text-area{
+ /*quotes*/ 
+.sp-text-area{
     text-align: center;
     font-size: 25px;
     color: #20212c;
 }
 
 
-.main-content .writer{
+.sp-main-content .sp-writer{
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #76410e;
@@ -107,14 +109,14 @@ section {
 }
 
 
-.main-content .button-area{
+.sp-main-content .sp-button-area{
     display: grid;
     place-items: center;
     margin-top: 20px;
     padding: 10px 0;
 }
 
-.button-area .btn button{
+.sp-button-area .sp-btn button{
     background-color: #76410e;
     color: #fff;
     border-radius: 5px;
@@ -126,10 +128,11 @@ section {
 
 }
 
-.button-area .btn button:active{
+.sp-button-area .sp-btn button:active{
     background-color:#8f5f2b;
 }
 
+ /*hero*/ 
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -145,12 +148,41 @@ section {
     position: relative;
 }
 
-#c p{
+#card p{
     font-weight: bold;
 }
+.sp-card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.sp-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+
+.sp-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
 #btn3{
     text-align: center;
 }
+
 #btn3 button{
     width: 150px;
     height: 30px;
@@ -163,7 +195,7 @@ section {
     background-color: rgba(238,224,208);
 }
 
-
+ /*footer*/ 
 footer {
     background:  #94593ce5;
     color: #fff;
@@ -229,7 +261,7 @@ footer a {
     html{
         font-size: 50%;
     }
-    .el-heading span{
+    .sp-heading span{
         font-size: 2.5rem;
     }
 
